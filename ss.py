@@ -219,7 +219,7 @@ def main():
     ax.imshow(img)
     for x, y, w, h in candidates:
         print(x, y, w, h)
-        rect = mpatches.Rectangle((x, y), h, w, fill=False, edgecolor='red', linewidth=1)
+        rect = mpatches.Rectangle((x, y), w, h, fill=False, edgecolor='red', linewidth=1)
         ax.add_patch(rect)
     plt.show()
 
